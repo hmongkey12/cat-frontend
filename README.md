@@ -1,2 +1,3 @@
-# epic-cat-battles-of-history
-A webpage that allows users to vote for the winning cat.
+# Epic Cat Battles of History Frontend
+
+The browser side of Epic Cat Battles of History. Epic Cat Battles of History allows users to vote for the winning cat.
