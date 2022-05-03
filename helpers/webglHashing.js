@@ -5,7 +5,6 @@ const webglHash = () => {
     alert("Webgl not supported.  Time to get a new computer!!!");
     return;
   }
-  console.log("hi");
 };
 
 export { webglHash };
