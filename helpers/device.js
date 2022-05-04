@@ -29,7 +29,4 @@ async function deviceHash() {
 
   return varHex;
 }
-
-module.exports = {
-  deviceHash,
-};
+export { deviceHash };
