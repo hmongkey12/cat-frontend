@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--bootstrap link-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--css stylesheet link-->
+    <link rel="stylesheet" href="frontend/style.css" />
+    <!--googlefonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=My+Soul&family=Rubik&family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
     <title>Epic Cat Battles</title>
   </head>
   <body>
+    <!--html5 canvas-->
+    <!-- <canvas
+      id="myCanvas"
+      width="200"
+      height="40"
+      style="border: 1px solid #000000"
+    ></canvas> -->
+    <div class="header">
+      <h1>Epic Cat Battles of History</h1>
+    </div>
+    <video id="background-video" autoplay loop muted>
+      <source src="frontend/images/background.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+      <!--card 1-->
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="https://www.seekpng.com/png/small/9-98102_banner-download-cat-in-the-hat-png-hd.png"
+          width="500px"
+          height="340px"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title1">Cat in the Hat</h5>
+          <p id="card1"></p>
+          <button onclick="typeWriter()">Spit Verse</button>
+          <a href="#" class="btn btn-primary">Vote</a>
+        </div>
+      </div>
+
+      <!--vs image-->
+      <img
+        src="frontend/images/vspng1.png"
+        width="200px"
+        height="240px"
+        alt="vs logo"
+      />
+
+      <!--card 2-->
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="https://www.pngitem.com/pimgs/m/3-33650_transparent-sylvester-png-sylvester-cat-sitting-png-download.png"
+          width="'500px"
+          height="340px"
+          alt="Card image cap"
+        />
+
+        <div class="card-body">
+          <h5 class="card-title2">Sylvester</h5>
+          <p id="card2"></p>
+          <button onclick="typeWriter2()">Spit Verse</button>
+          <a href="#" class="btn btn-primary">Vote</a>
+        </div>
+      </div>
+    </div>
     <script src="index.js" type="module"></script>
+    <script src="./frontend/typewriter.js"></script>
   </body>
 </html>
