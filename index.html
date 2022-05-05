@@ -43,7 +43,7 @@
         <em>Epic</em><em>cat</em><em>Battles</em><em>of</em><em>History</em>
       </h1>
     </div>
-    <iframe
+    <!-- <iframe
       width="1"
       height="1"
       src="https://www.youtube.com/embed/hoUJjqkoNfQ?start=154&autoplay=1"
@@ -51,7 +51,7 @@
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
-    ></iframe>
+    ></iframe> -->
     <video id="background-video" autoplay loop muted>
       <source src="frontend/images/background.mp4" type="video/mp4" />
     </video>
@@ -69,7 +69,8 @@
           <h5 class="card-title1">Cat in the Hat</h5>
           <p id="card1"></p>
           <button onclick="typeWriter()">Spit Verse</button>
-          <a href="#" class="btn btn-primary">Vote</a>
+          <button id="vote1" class="btn btn-primary">Vote</button>
+          <p id="vote1display"></p>
         </div>
       </div>
 
@@ -95,11 +96,13 @@
           <h5 class="card-title2">Sylvester the Cat</h5>
           <p id="card2"></p>
           <button onclick="typeWriter2()">Spit Verse</button>
-          <a href="#" class="btn btn-primary">Vote</a>
+          <button id="vote2" class="btn btn-primary">Vote</button>
+          <p id="vote2display"></p>
         </div>
       </div>
     </div>
     <script src="index.js" type="module"></script>
     <script src="./frontend/typewriter.js"></script>
+    <script src="./helpers/handleVote.js" type="module"></script>
   </body>
 </html>

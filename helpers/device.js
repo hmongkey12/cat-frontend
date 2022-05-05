@@ -10,10 +10,8 @@ async function deviceHash() {
 
   // Unique to Chromium/Mozilla
   let devicesObject = [];
-  (async () => {
-    let deviceResult = await nav.mediaDevices.enumerateDevices();
-    devicesObject.push(deviceResult);
-  })();
+  let deviceResult = await nav.mediaDevices.enumerateDevices();
+  devicesObject.push(deviceResult);
   let deviceIDs = devicesObject[0].map((a) => a.groupID);
 
   // Create finished array for hashing
