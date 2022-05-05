@@ -6,6 +6,54 @@
   margin-top: 15%;
 }
 
+@font-face {
+  font-family: budmo;
+  src: url("../fonts/BudmoJiggler.TTF");
+}
+
+@font-face {
+  font-family: ascent;
+  src: url("../fonts/Ascent-2-Stardom.ttf");
+}
+
+@font-face {
+  font-family: blockStock;
+  src: url("../fonts/Block\ Stock.ttf");
+}
+
+@font-face {
+  font-family: neoPrint;
+  src: url("../fonts/NeoPrintM319.otf");
+}
+
+h1 {
+  background-color: #951a17;
+}
+
+em {
+  color: #e7e7e7;
+}
+
+em:first-child {
+  font-family: neoPrint;
+}
+
+em:nth-child(4) {
+  font-family: neoPrint;
+}
+
+em:last-child {
+  font-family: budmo;
+}
+
+em:nth-child(3) {
+  font-family: ascent;
+}
+
+em:nth-child(2) {
+  font-family: blockStock;
+}
+
 #background-video {
   width: 100vw;
   height: 100vh;
