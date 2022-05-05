@@ -23,3 +23,7 @@ function typeWriter2() {
     setTimeout(typeWriter2, speed);
   }
 }
+
+//setting audioplayer default volume
+let audio = document.getElementById("aud");
+audio.volume = 0.1;
