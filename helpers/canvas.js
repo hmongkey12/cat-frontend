@@ -31,8 +31,6 @@ function getCanvasHash() {
   ctx.fillRect(20, 12, 100, 5);
   src = canvas.toDataURL();
   // hash = sha256(src);
-  canvas.remove();
-
   let char = "";
   for (let i = 0; i < src.length; i++) {
     char = src.charCodeAt(i);
