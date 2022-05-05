@@ -1,9 +1,9 @@
 .container {
   display: flex;
   justify-content: space-evenly;
-  /* background-color: white; */
   border-radius: 5px;
-  margin-top: 15%;
+  margin-top: 5%;
+  /* margin-top: 15%; */
 }
 
 @font-face {
@@ -67,6 +67,10 @@ em:nth-child(2) {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: white;
   text-align: center;
   color: black;
@@ -79,8 +83,15 @@ body {
 .card-title1 {
   color: red;
   text-align: center;
+  font-size: 3vh;
 }
 .card-title2 {
   color: royalblue;
   text-align: center;
+  font-size: 3vh;
+}
+
+.audio {
+  margin: 0 auto;
+  display: block;
 }

@@ -27,14 +27,20 @@ ctx.shadowColor = "red";
 ctx.fillRect(20, 12, 100, 5);
 
 // hashing md5 function
-src = canvas.toDataURL();
-hash = 0;
+function getCanvasHash() {
+  src = canvas.toDataURL();
+  hash = 0;
 
-for (let i = 0; i < src.length; i++) {
-  char = src.charCodeAt(i);
-  hash = (hash << 5) - hash + char;
-  hash = hash & hash;
+  for (let i = 0; i < src.length; i++) {
+    char = src.charCodeAt(i);
+    hash = (hash << 5) - hash + char;
+    hash = hash & hash;
+  }
+
+  return hash;
+  // //displaying hash on innerhtml
+  // document.getElementById("hash-code").innerHTML = hash;
 }
-console.log(hash);
-//displaying hash on innerhtml
-document.getElementById("hash-code").innerHTML = hash;
+
+let canvasHash = getCanvasHash();
+console.log(canvasHash);
