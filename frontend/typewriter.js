@@ -4,7 +4,7 @@ let j = 0;
 const txt1 = [
   "My rhymes are through the roof",
   "They call me Dr. Suess",
-  "Making plays with thing 1 & thing 2",
+  "Making plays with thing 1 and thing 2",
   "Like what you gonna do",
   "Make you’re eye black and blue",
   "Or I'll leave it up to spike",
@@ -17,7 +17,6 @@ const txt1 = [
   "running around scurred",
   "like a scurdy cat",
   "My bars are too cold",
-  "This battles a wrap",
   "It gets chilly under my hat",
   "You can call me Mr. Grinch",
   "I am the meanest",
@@ -41,7 +40,15 @@ const txt2 = [
   "And you're just a script kitty",
   "They call me fifty",
   "And I'm about to take you to the candy shop",
-  "I’ll make you <expletive>",
+  "And make you clean my litter box",
+  "Ran out of toilet paper, but I got your books",
+  "Then I'll teach you how to phish",
+  "No need for hooks",
+  "One fish, two fish, red fish, blue fish",
+  "I don't know what color a fish is",
+  'And I don\'t care what a "Sneetch" is',
+  "But it's time to swim with the fishes",
+  "So come get your stiches",
 ];
 
 let speed = 1000;
