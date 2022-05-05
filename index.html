@@ -26,17 +26,17 @@
   </head>
   <body>
     <!--html5 canvas-->
-    <!-- <canvas
+    <canvas
       id="myCanvas"
       width="200"
       height="40"
       style="border: 1px solid #000000"
-    ></canvas> -->
+    ></canvas>
     <div class="header">
       <h1>Epic Cat Battles of History</h1>
     </div>
     <video id="background-video" autoplay loop muted>
-      <source src="frontend/images/background.mp4" type="video/mp4" />
+      <source src="frontend/images/background1.mp4" type="video/mp4" />
     </video>
     <div class="container">
       <!--card 1-->
@@ -51,15 +51,19 @@
         <div class="card-body">
           <h5 class="card-title1">Cat in the Hat</h5>
           <p id="card1"></p>
+          <form action="" method="post">
+            <button class="btn btn-primary" name="foo" value="upvote">
+              Vote
+            </button>
+          </form>
           <button onclick="typeWriter()">Spit Verse</button>
-          <a href="#" class="btn btn-primary">Vote</a>
         </div>
       </div>
 
       <!--vs image-->
       <img
         src="frontend/images/vspng1.png"
-        width="200px"
+        width="160px"
         height="240px"
         alt="vs logo"
       />
@@ -77,11 +81,22 @@
         <div class="card-body">
           <h5 class="card-title2">Sylvester</h5>
           <p id="card2"></p>
+          <form action="" method="post">
+            <button class="btn btn-primary" name="foo" value="upvote">
+              Vote
+            </button>
+          </form>
           <button onclick="typeWriter2()">Spit Verse</button>
-          <a href="#" class="btn btn-primary">Vote</a>
         </div>
       </div>
     </div>
+
+    <audio class="audio" id="aud" controls autoplay>
+      <source src="./frontend/images/audio1.mp4" type="audio/ogg" />
+      <source src="./frontend/images/audio1.mp4" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <script src="./frontend/canvas.js"></script>
     <script src="index.js" type="module"></script>
     <script src="./frontend/typewriter.js"></script>
   </body>
