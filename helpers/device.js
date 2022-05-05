@@ -6,14 +6,15 @@ async function deviceHash() {
     nav.hardwareConcurrency,
     nav.language,
     nav.maxTouchPoints,
+    window.screen.height,
+    window.screen.width,
   ];
 
   // Unique to Chromium/Mozilla
   let devicesObject = [];
-  (async () => {
-    let deviceResult = await nav.mediaDevices.enumerateDevices();
-    devicesObject.push(deviceResult);
-  })();
+
+  let deviceResult = await nav.mediaDevices.enumerateDevices();
+  devicesObject.push(deviceResult);
   let deviceIDs = devicesObject[0].map((a) => a.groupID);
 
   // Create finished array for hashing
@@ -29,7 +30,4 @@ async function deviceHash() {
 
   return varHex;
 }
-
-module.exports = {
-  deviceHash,
-};
+export { deviceHash };
