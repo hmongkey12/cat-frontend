@@ -4,3 +4,4 @@ webglHash();
 
 const deviceCode = await deviceHash();
 console.log(deviceCode);
+console.log(webglHash());

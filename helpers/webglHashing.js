@@ -59,8 +59,8 @@ const webglHash = () => {
     alert("Webgl not supported.  Time to get a new computer!!!");
     return;
   }
-
   document.body.appendChild(canvas);
+  return sha256(canvas.toDataURL());
 };
 
 export { webglHash };
