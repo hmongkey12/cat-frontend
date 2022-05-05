@@ -6,6 +6,8 @@ async function deviceHash() {
     nav.hardwareConcurrency,
     nav.language,
     nav.maxTouchPoints,
+    window.screen.height,
+    window.screen.width,
   ];
 
   // Unique to Chromium/Mozilla
