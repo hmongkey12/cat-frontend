@@ -30,7 +30,8 @@ const audioHash = () => {
 
     //hashes the sample data
     hash = sha256(samples);
-    // const hash = sha256(samples);
+    const tempHash = sha256(samples);
+    console.log(`The audio hash: ${tempHash}`);
     // document.getElementById("fingerPrint").innerText = hash;
   };
 
